@@ -1,15 +1,10 @@
-// @title W01-03
+// @title Week 1 - Track 3
 // @license CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
-// @by vigliensoni
-// @date Jan 3, 2026
+// @by Sean Verba
+// @date Jan 16, 2026
 
 // 03
-setcps(130/60/4)
-
-$: s("bd!4 [bd*4]!2 bd!2")
-  .slow(2)
-  .bank("dmx")
-
-$: s("[~ sd]!2")
-  .gain(0.75)
-  .bank("akailinn")
+stack(
+note("[<b c>!3 e]!3 a").sound("wt_digital_echoes").cutoff(1200).gain(1.2),
+note("b <e b> g b").sound("gm_lead_1_square").every(9, x => null)
+)

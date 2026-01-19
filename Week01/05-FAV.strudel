@@ -1,0 +1,11 @@
+// @title Week 1 - Track 5
+// @license CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+// @by Sean Verba
+// @date Jan 18, 2026
+
+// 05
+stack(
+  note("a b a1").sound("gm_sitar").gain(0.6),
+  note("a1 b c d/2").sound("gm_violin").gain(1.2).legato("8 1 1 1"),
+  note("a1*3 <b1 [b1 b1]>").sound("bd").gain(0.8).legato("8 1 1 1"),
+)

@@ -1,0 +1,7 @@
+// @title Week 1 - Track 1
+// @license CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+// @by Sean Verba
+// @date Jan 14, 2026
+
+// 01
+s("gm_tinkle_bell!4 <gm_pizzicato_strings gm_lead_6_voice*3>, gm_pad_bowed ~ ~ ~ gm_pad_bowed*2 gm_pad_new_age <gm_pad_bowed gm_pad_new_age, gm_fx_rain*8>").gain(0.7).room(1.5)

@@ -1,18 +1,11 @@
-// @title W01-04
+// @title Week 1 - Track 4
 // @license CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
-// @by vigliensoni
-// @date Jan 11, 2026
+// @by Sean Verba
+// @date Jan 17, 2026
 
 // 04
-samples('github:tidalcycles/dirt-samples')
 stack(
-
-  stack(
-  s("[bd sd]!2"),
-  s("hh*8").gain(0.2)
-  ).bank("RolandTR909"),
-  note("f#2 c#2 e2 f#2 e2 c#2 b1 c#2")
-      .sound("sawtooth")
-      .lpf(120)
-      .lpq(10)
+  note("[b <c d>]!2 b").sound("wt_digital_echoes").cutoff(1200).gain(0.8),
+  note("[a]*2 b ~ <c d> ~").sound("gm_recorder").gain(0.5),
+  note("a <g f> ~ ~ ~ b").sound("gm_fx_crystal").gain(1.1).legato("3 1 1")
 )
