@@ -1,0 +1,11 @@
+// @title Week 2 - Track 1
+// @license CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+// @by Sean Verba
+// @date Jan 21, 2026
+
+// 1
+setcps(130/60/3)
+stack(
+  note("a*2 e g f g b <a a4>/2 c2").sound("gm_guitar_harmonics").legato("3 1 1 1 1 1 1 2").delay(0.4).crush(5).gain(0.5),
+  note("b*3 b/2 <a b> d c").sound("gm_woodblock").crush(4)
+)

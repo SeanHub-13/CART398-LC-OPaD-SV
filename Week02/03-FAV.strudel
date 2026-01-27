@@ -1,0 +1,12 @@
+// @title Week 2 - Track 3
+// @license CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+// @by Sean Verba
+// @date Jan 23, 2026
+
+setcps(130/60/4)
+stack(
+  note("a1(3,8, <0, 1, 2, 1>)").sound("gm_pad_warm").gain(0.33).legato("0.6").phaser(2).room(0.9).size(2),
+  note("a3(5,16)").sound("gm_pizzicato_strings").legato(2).fold(4).gain(0.05).vibrato(),
+  note("a!5(4,10)").sound("gm_pizzicato_strings").legato().fold(4).gain(0.025).vibrato(2),
+  note("a3 <b2!3 b3>").sound("gm_fx_atmosphere").room(2).gain(0.2)
+)

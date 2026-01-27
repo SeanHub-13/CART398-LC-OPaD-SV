@@ -1,0 +1,12 @@
+// @title Week 2 - Track 2
+// @license CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+// @by Sean Verba
+// @date Jan 22, 2026
+
+//2
+setcps(130/60/3)
+stack(
+  note("<a3 ~ g3 ~ d4 ~ e4 ~>").sound("gm_tubular_bells").slow(2).room(3).gain(0.3),
+  note("a2 ~ ~ e3").sound("gm_fretless_bass").legato(2).gain(0.35),
+  note("~ c5 ~ g5").sound("gm_fx_crystal").delay(0.25).crush(3).gain(0.25)
+)

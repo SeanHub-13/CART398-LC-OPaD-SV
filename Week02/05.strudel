@@ -1,0 +1,11 @@
+// @title Week 2 - Track 5
+// @license CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+// @by Sean Verba
+// @date Jan 25, 2026
+
+setcps(130/60/5)
+stack(
+  note("~ d3!2(2, 7) ~ <c4 c3>").sound("gm_viola").gain(0.4).room(0.9).slow(0.95),
+  note("<a2 [c3 ~ a2]>(5, 7) ~ b2 ~").sound("gm_electric_guitar_jazz").legato("2 2").gain(0.9),
+  note("a3").sound("gm_tubular_bells").room(3).slow(3).legato(2).gain(0.4)
+)
