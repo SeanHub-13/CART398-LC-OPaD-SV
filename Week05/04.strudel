@@ -1,0 +1,26 @@
+// @title Week 5 - Track 4
+// @license CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+// @by Sean Verba
+// @date Feb 14, 2026
+
+setcps(130/60/3)
+
+ $: n("[~ 3 ~] [2 ~ 1]")
+  .s("ace_bd")
+  ._punchcard()
+.every(1, x=>x.color("<crimson gold>"))
+
+$: n("[3 ~ 3] <3*3 3*2> ")
+  .s("ace_ht")
+  ._punchcard()
+.every(1, x=>x.color("<silver black>"))
+
+$: n("1")
+  .s("linn9000_tb")
+  ._punchcard()
+.every(1, x=>x.color("<violet yellow>"))
+
+$: n("<3 2 5>(3,8) [5 ~ <3 4>]*2")
+.s("gm_slap_bass_1")
+  ._punchcard()
+.every(1, x=>x.color("<brown gray>"))

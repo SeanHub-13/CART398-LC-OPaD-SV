@@ -1,0 +1,22 @@
+// @title Week 5 - Track 5
+// @license CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+// @by Sean Verba
+// @date Feb 15, 2026
+
+setcps(130/60/4)
+
+ $: n("5 7, <3*3(3,8) 3*3(5,8)>")
+  .s("ace_bd")
+  ._punchcard()
+.every(1, x=>x.color("<crimson gold>"))
+.crush(3)
+
+$: n("<[<1 1*2> 2 <3 3*3>](6,8)>")
+.s("gm_distortion_guitar")
+._punchcard()
+.every(1, x=>x.color("<blue gold>"))
+
+$: n("3*2(7,8) <[3*2 2] 2> 2 4 ")
+.s("gm_harpsichord")
+._punchcard()
+.every(1, x=>x.color("<white pink>"))
