@@ -1,0 +1,31 @@
+// @title Week 6 - Track 4
+// @license CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+// @by Sean Verba
+// @date Feb 22, 2026
+
+setcps(130/60/4)
+
+$: n("<-3 -2 -5>(3,8) [-5 ~ <-3 -4 -6>]*2 <-7 -5>")
+  .s("gm_slap_bass_2")
+  .scale("C:Minor")
+  .euclid(5, 8)
+  ._punchcard()
+  .every(1, x => x.color("<brown gray teal>"))
+
+$: n("<-12 -10 -8 -7>, [~ -5]")
+  .s("gm_synth_bass_2")
+  .scale("C:Minor")
+
+$: n("[~ 12 10] <7 5>")
+  .s("gm_tubular_bells")
+  .scale("C:Minor")
+  .euclid(5, 16)
+  .vib(10)
+  .gain(0.4)
+
+$: n("[5 ~ 0 ~ 13]*8")
+  .s("tri")
+  .euclid(13, 16)
+  .crush(6)
+  .gain(0.4)
+  .scope()

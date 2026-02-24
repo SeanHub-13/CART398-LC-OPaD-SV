@@ -1,0 +1,35 @@
+// @title Week 6 - Track 5
+// @license CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+// @by Sean Verba
+// @date Feb 23, 2026
+
+setcps(130/60/4)
+
+$: note("<d4 f4 a4 c5> ~ <g3 bb3 d4 f4> ~ <c4 e4 g4 bb4>")
+  .s("gm_pad_metallic")
+  .gain(0.4)
+  .legato(1.5)
+  .room(1.5)
+
+$: note("[a5 ~ ~] [~ c6 ~] <f5 ~>")
+  .s("gm_music_box")
+  .gain(0.4)
+  .room(1.2)
+
+$: n("<-3 ~ -7 ~ -5 ~>")
+  .scale("C:Minor")
+  .s("gm_synth_bass_1")
+  .gain(0.5)
+  .cat(
+   n("0(5,8)")
+   .sound("gm_reed_organ")
+   .scale("C:Minor")
+   .gain(0.7)
+   .vib(20)
+  )
+
+$: note("c6 bb5 a5 g5")
+  .s("gm_pad_sweep")
+  .gain(0.1)
+  .vib(4)
+  .every(2, x => x.rev())

@@ -1,0 +1,48 @@
+// @title Week 6 - Track 1
+// @license CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+// @by Sean Verba
+// @date Feb 19, 2026
+
+
+samples('github:tidalcycles/dirt-samples')
+setcps(130/60/4)
+
+$: n("<1!2 1!2>")
+.s("gm_fx_brightness")
+  .room(10)
+  .vib(3)
+  .gain(0.05)
+  .lpf(400)
+   .scale("flamenco")
+
+$: note("<gb fb eb db>")
+  .s("gm_tinkle_bell, gm_music_box")
+  .slow(4)
+  .gain(0.5)
+  .scope()
+
+$: n("1")
+.s("crackle")
+.room(2)
+  .color("red")
+  .gain(1)
+  .crush(5)
+  .degradeBy(0.7)
+  .vib(1)
+  ._punchcard()  .scale("flamenco")
+
+$: note("bb ab gb ab cb db eb fb ab bb bb ab")
+  .s("gm_reverse_cymbal")
+  .every(2, x=>x.rev())
+  .degradeBy(0.7)
+  .slow(2)
+
+$: n("11 13 15 17 19")
+  .s("gm_shakuhachi")
+  .rev()
+  .slow(2)
+  .crush(8)
+  .scale("flamenco")
+  .every(2, x=>x.slow(4))
+  .gain(0.4)
+  .euclid(5, 8)

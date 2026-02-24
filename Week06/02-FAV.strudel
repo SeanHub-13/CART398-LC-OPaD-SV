@@ -1,0 +1,36 @@
+// @title Week 6 - Track 2
+// @license CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+// @by Sean Verba
+// @date Feb 20, 2026
+
+
+setcps(130/60/4)
+
+$: note("g# ~ g ab, <cb c#>")
+  .s("gm_fx_rain")
+  .euclid(5, 16)
+
+$: n("<-10 -15>, <5 [20 7 25 16]>")
+  .s("9000_bd")
+  .scale("C:Minor")
+  .euclid(3, 8)
+
+$: n("-30, <-25 -21 -23 -27>?0.7")
+  .s("numbers")
+  .scale("C:Minor")
+  .vib(3)
+
+$: n("-5 5")
+  .s("gm_electric_guitar_jazz")
+  .scale("C:Minor")
+  .vib(2)
+  .gain(2)
+  .euclid(3, 8)
+
+$: n("-3")
+  .s("gm_gunshot")
+  .scale("C:Minor")
+  .vib(4)
+  .crush(4)
+  .gain(1)
+  .scope()
