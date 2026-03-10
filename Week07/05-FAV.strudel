@@ -1,0 +1,16 @@
+// @title Week 7 - Track 5
+// @license CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+// @by Sean Verba
+// @date Mar 9, 2026
+
+
+noise(6, 0.2)
+.colorama(1.1)
+.modulate(
+osc(18, 0.1, 1), 0.4)
+.modulateScale(
+voronoi(30, 0.6, 3), 0.9)
+.pixelate(400, 400)
+.contrast(1.5)
+.saturate(2)
+.out()

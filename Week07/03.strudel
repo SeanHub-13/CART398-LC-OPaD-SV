@@ -1,0 +1,18 @@
+// @title Week 7 - Track 3
+// @license CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+// @by Sean Verba
+// @date Mar 7, 2026
+
+
+voronoi(10, 0.8, 2)
+.color(0,1,0.5)
+.colorama(0.0001)
+.mult(
+osc(30, -0.4, 0.5)
+.rotate(1.5,0),0.3)
+.rotate(() => Math.sin(time*0.05)*0.2)
+.scale(() => 1 + Math.sin(time*0.07)*0.05)
+.modulate(
+noise(2,0.1)
+.brightness(-0.2),0.15)
+.out()

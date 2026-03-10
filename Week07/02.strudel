@@ -1,0 +1,23 @@
+// @title Week 7 - Track 2
+// @license CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+// @by Sean Verba
+// @date Mar 6, 2026
+
+
+osc(
+  () => 8 + Math.sin(time*0.15)*3,
+  0.05,
+  1.2
+)
+.rotate(() => Math.sin(time*0.08)*0.3)
+.modulate(
+  noise(
+    () => 2 + Math.sin(time*0.1),
+    0.15
+  ).kaleid(
+    () => 4 + Math.floor(Math.sin(time*0.2)*2)
+  ),
+  1
+)
+.scale(() => 1 + Math.sin(time*0.12)*0.15)
+.out()

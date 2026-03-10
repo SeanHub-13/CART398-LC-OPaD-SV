@@ -1,0 +1,11 @@
+// @title Week 7 - Track 1
+// @license CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+// @by Sean Verba
+// @date Mar 5, 2026
+
+
+osc(6, 0.2, 0.8).pixelate().scrollX(0, 1).color(-0.6, 0.5).rotate(3).repeat().blend(noise(3).blend(gradient().saturate(-0.5))).modulateKaleid(osc(2,0.3,2),50).out(o0)
+
+shape(999).color(1,0,0).scale( () => Math.sin(5 * time), 9/16 ).out(o1)
+
+voronoi(() => Math.sin(1 * time), 5/20).color(1,1,0).out(o2)
