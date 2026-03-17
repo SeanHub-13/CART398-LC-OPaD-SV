@@ -1,0 +1,15 @@
+// @title Week 8 - Visual 3
+// @license CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+// @by Sean Verba
+// @date Mar 14, 2026
+
+
+shape(3, 0.4, 0.001)
+.colorama(0.4)
+.repeat(3, 3)
+.scrollX(0.5, 0.1)
+.scrollY(0.5, 0.1)
+.add(src(o0)
+.scale(() => 1.05 + Math.sin(time * 0.2) * 0.01).scrollX(0.01, 0.1).scrollY(0.01, 0.1).colorama(0.15), 0.4)
+.luma(0.3, 0.1)
+.out()

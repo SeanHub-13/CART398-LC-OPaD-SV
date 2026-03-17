@@ -1,0 +1,13 @@
+// @title Week 8 - Visual 2
+// @license CC BY-NC-SA 4.0 https://creativecommons.org/licenses/by-nc-sa/4.0/
+// @by Sean Verba
+// @date Mar 13, 2026
+
+
+noise(3, 0.2)
+.colorama(0.01)
+.mult(gradient(0.5))
+.add(src(o0)
+.scale(1.02)
+.rotate(() => Math.sin(time * 0.3) * 0.02),0.5)
+.out()
